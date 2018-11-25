@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <title>SAU Shoppen</title>
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="statusbar-overlay"></div>
+
+    <!--<div class="panel-overlay"></div>
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block" id="main_menu">
+            <h1 class="centered">Menu</h1>
+			<a href="cart.html" class="close-panel centered">Indkøbskurv</a>
+			<a href="" onclick="javascript:ssLogout()" class="close-panel centered">Forsiden</a>
+			<a href="" onclick="window.open('https://www.facebook.com/saushoppen/', '_system')" data-rel="external" class="close-panel centered">Facebook</a>
+			<a href="om.html" class="close-panel centered">Om Shoppen</a>
+			<a href="faq.html" class="close-panel centered">FAQ</a>
+			<a href="feedback.html" class="close-panel centered">Feedback</a>
+        </div>
+    </div>-->
+
+    <div class="views">
+        <div class="view view-main">
+            <!--<div class="navbar">
+                <div class="navbar-inner">
+					          <div class="left"><img src="res/logo.png"/></div>
+                    <div class="center sliding">SAU Shoppen</div>
+                    <div class="right"><a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a></div>
+                </div>
+            </div>-->
+
+            <div class="pages navbar-through toolbar-through">
+                <div data-page="index" class="page">
+                    <div class="page-content" id="index_scroll">
+                        <div class="content-block">
+
+							<div id="splash_box">
+								<img src="res/logo.png" class="centered"/>
+							</div>
+
+							<div id="login_box" class="hidden">
+                <div id="tp1">SAU</div>
+                <div id="tp2">Shoppen</div>
+                <div id="get_auto">
+									<input type="text" placeholder="KU ID" maxlength="6" autofocus/>
+									<p class="error hidden centered">Dit skema blev ikke fundet!</p>
+									<h2 class="centered"><a href="javascript:ssLogin()">Vis skema</a></h2>
+								</div>
+
+								<!--<h2 class="centered">Automatisk</h2>
+								<div id="get_auto">
+									<input type="text" placeholder="KU ID" maxlength="6" autofocus/>
+									<p class="error hidden centered">Dit skema blev ikke fundet!</p>
+									<h2 class="centered"><a href="javascript:ssLogin()">Vis skema</a></h2>
+								</div>-->
+
+<!--
+								<h3><div class="line"></div>eller<div class="line"></div></h3>
+
+								<h2 class="centered">Manuelt</h2>
+								<div id="get_manual">
+                  <a href="#" id="man_auto" class="item-link item-content autocomplete-opener">
+                    <input type="hidden">
+                    <div class="item-inner">
+                      <div class="item-title">Find timer...</div>
+                      <div class="item-after"></div>
+                    </div>
+                  </a><div class="line"></div>
+									<p class="error hidden centered">Noget gik galt, har du valgt?</p>
+									<h2 class="centered"><a href="javascript:ssLoginM()">Vis skema</a></h2>
+								</div>
+
+                <h3><div class="line"></div>eller<div class="line"></div></h3>
+
+								<h2 class="centered">Underviser</h2>
+								<div id="get_und">
+                  <a href="#" id="und_auto" class="item-link item-content autocomplete-opener">
+                    <input type="hidden">
+                    <div class="item-inner">
+                      <div class="item-title">Find underviser...</div>
+                      <div class="item-after"></div>
+                    </div>
+                  </a><div class="line"></div>
+									<p class="error hidden centered">Dit skema blev ikke fundet!</p>
+									<h2 class="centered"><a href="javascript:ssLoginU()">Vis skema</a></h2>
+								</div>
+-->
+
+							</div>
+
+							<div id="skema_box" class="hidden"></div>
+							<div id="skema_manuelt_sund" class="hidden"></div>
+							<div id="skema_manuelt_ku" class="hidden"></div>
+              <div id="shop_box"><img src="res/logo_shop.png" id="shop_splash"/></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ***** JavaScripts ***** -->
+    <!-- LIBRARIES -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/MD5.js"></script>
+    <script type="text/javascript" src="js/cookies.js"></script>
+
+    <!-- CUSTOM -->
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/table_sort_elements.js"></script>
+    <script type="text/javascript" src="js/table_json_2d.js"></script>
+</body>
+
+</html>

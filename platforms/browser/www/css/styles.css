@@ -1,0 +1,88 @@
+@font-face { font-family: gidolinyaregular; src: url(gidolinyaregular.otf); }
+* { color: black; font-family: gidolinyaregular; }
+::-webkit-scrollbar { display: none; }
+
+.statusbar-overlay { background: #000000; }
+.content-block { padding: 0; margin: 0; text-align: center; vertical-align: middle; }
+.centered { display: block; margin: auto; text-align: center; width: 100%; }
+.hidden { display: none !important; }
+.error { font-style: italic; color: red; }
+.page-content { margin: 0 !important; padding: 0 !important; }
+
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.2em; padding: 0.5em 0 0.2em; }
+h3 { padding: 1em 0 0.5em; }
+.material-icons { font-size: 1em !important; color: #37a6e0 !important; }
+
+table { border-collapse: collapse; width: 100% !important; text-align: left; background: white; }
+table tr:first-child td { border-top: 1px solid lightgray; text-align: center; font-weight: bold; }
+#skema_box table tr:nth-last-child(2) td { border-bottom: 1px solid lightgray; }
+#shop_box table tr:last-child td { border-bottom: 1px solid lightgray; }
+
+.left img { height: 1.5em; vertical-align: middle; padding-left: 0.5em; }
+
+#login_box { width: 100%; position: fixed; top: 50%; transform: translate(0, -50%); }
+#login_box #tp1 { font-size: 5em; margin-bottom: -0.4em; color: #0099ff; }
+#login_box #tp2 { font-size: 2.5em; color: #0099ff; }
+
+#login_box h1 { font-size: 5em; margin: 0.5em 0 0; font-weight: normal; color: #0099ff; }
+#login_box h2 { font-size: 2.25em; font-weight: normal; margin: 0 auto 0.5em !important; color: #0099ff; }
+#login_box h3 { font-size: 1.25em; font-weight: normal; box-sizing: border-box; margin: 0.5em auto; padding: 1em 1em 0.5em; width: 100%; text-align: center; color: gray; }
+#login_box h3 .line { background: gray; display: inline-block; width: 80px; height: 1px !important; margin: 0 1em 0.3em; }
+
+#get_auto { width: 100%; padding: 0.25em 0 1em; }
+#get_manual, #get_und { background: white; width: 100%; padding: 2.25em 0 1em; }
+#get_manual a.item-content, #get_und a.item-content { text-align: center; width: 100%; font-size: 1.5em; }
+#get_manual .line, #get_und .line { background: lightgray; height: 1px; width: 80%; margin: 1em auto 0.75em; }
+
+#login_box p { font-size: 1.5em; }
+#login_box input { width: 80%; padding: 0.5em 0; display: block; margin: 0.5em auto; font-size: 2em; border: none; border-bottom: 1px solid lightgray; text-align: center; }
+#splash_box img, #shop_splash { max-height: 80%; max-width: 50%; width: auto; height: auto; position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%); }
+
+#main_menu h1 { color: white; padding: 1em 0 0.5em; font-size: 3em; }
+#main_menu a { padding: 0.5em; font-size: 2em; box-sizing: border-box; }
+
+#skema_box #logout_btn, #skema_box #help_btn, #skema_box .row_more { display: none; }
+#skema_box h2, #skema_box h1, #shop_box h1 { text-align: center; width: 100%; }
+#skema_box td, #shop_box td { padding: 0.4em; text-align: center; }
+#skema_box td:nth-child(4), #shop_box td:nth-child(2), #shop_box td:nth-child(3) { display: none; }
+
+#skema_box .row_odd { background: #cdf; }
+/*#skema_box .row_odd td:nth-child(odd) { background: #def; }*/
+#skema_box .row_odd + tr { background: #def; }
+
+#shop_box { display: none; }
+#shop_box div { overflow-x: scroll; }
+#shop_box tr:nth-child(even) { background: #fdc; }
+#shop_box tr:nth-child(even) td:nth-child(odd) { background: #fed; }
+
+#skema_box #week_list { position: fixed; bottom: 0; overflow-x: scroll; box-sizing: border-box; width: 100%; background: #eee; border-top: 1px solid lightgray; border-bottom: 1px solid lightgray; padding: 1em; text-align: center; }
+#skema_box #week_list b { margin: 0 0 0.5em; display: block; }
+#skema_box #week_list a { padding: 0.5em 1.5em; margin: 0.25em; border: 1px solid #007aff; border-radius: 8px; display: inline; background: white; }
+#skema_box #week_list a:hover { background: #007aff; color: white; }
+
+#shop_box .back_btn { color: black; font-weight: bold; background: white; padding: 0.5em 0; border-top: 1px solid lightgray; border-bottom: 1px solid lightgray; width: 100%; text-align: center; margin: 0 0 1em; font-size: 1.25em; }
+
+#faq_box h2, #om_box h2 { vertical-align: middle; }
+#feedback_box p, #faq_box p, #om_box p { box-sizing: border-box; width: 100%; height: auto; padding: 1em 5em; text-align: left; background: white; border-top: 1px solid lightgray; border-bottom: 1px solid lightgray; }
+#faq_box img, #om_box img { height: 2em; padding: 0 1em; display: inline; vertical-align: middle; }
+#feedback_box textarea { width: 80%; margin: 2em auto; display: block; border: 1px solid #37a6e0; }
+#feedback_box a { font-size: 1.5em; }
+
+
+#skema_manuelt_sund p, #skema_manuelt_ku p { width: 100%; text-align: center; padding: 1em 0 0; margin: 0; font-size: 1.4em; }
+#skema_manuelt_sund p::before { content: "Uge "; }
+#skema_manuelt_sund table, #skema_manuelt_ku table { border-collapse: collapse; margin: 0.5em 0 1em; padding: 1em; background: white; border: none; border-top: 1px solid lightgray; border-bottom: 1px solid lightgray; }
+#skema_manuelt_sund tr, #skema_manuelt_sund td, #skema_manuelt_ku tr, #skema_manuelt_ku td { border: none; }
+#skema_manuelt_sund td, #skema_manuelt_ku td { border: none; padding: 0.25em; }
+#skema_manuelt_sund .columnTitles td, #skema_manuelt_ku .columnTitles td { padding: 0.5em 0 !important; }
+
+#skema_manuelt_sund td:nth-child(2), #skema_manuelt_sund td:nth-child(3), #skema_manuelt_sund td:nth-child(5), #skema_manuelt_sund td:nth-child(8), #skema_manuelt_sund td:nth-child(9) { display: none; }
+
+#skema_manuelt_ku td:nth-child(2), #skema_manuelt_ku td:nth-child(3), #skema_manuelt_ku td:nth-child(6), #skema_manuelt_ku td:nth-child(8), #skema_manuelt_ku td:nth-child(9) { display: none; }
+
+#skema_manuelt_sund tr:nth-child(4n-1), #skema_manuelt_sund tr:nth-child(4n), #skema_manuelt_ku tr:nth-child(4n-1), #skema_manuelt_ku tr:nth-child(4n) { background: #eee !important; }
+
+#skema_manuelt_sund tr:nth-child(4n-1) td:nth-child(4), #skema_manuelt_sund tr:nth-child(4n) td:nth-child(4), #skema_manuelt_sund tr:nth-child(4n-1) td:nth-child(7), #skema_manuelt_sund tr:nth-child(4n) td:nth-child(7) { background: #f7f7f7 !important; }
+
+#skema_manuelt_ku tr:nth-child(4n-1) td:nth-child(4), #skema_manuelt_ku tr:nth-child(4n) td:nth-child(4), #skema_manuelt_ku tr:nth-child(4n-1) td:nth-child(7), #skema_manuelt_ku tr:nth-child(4n) td:nth-child(7) { background: #f7f7f7 !important; }
